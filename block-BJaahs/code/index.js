@@ -27,7 +27,7 @@ let user = {
     correctAnswerIndex: option[1],
 
     isAnswerCorrect(index){
-        if(index === correctAnswerIndex){
+        if(index === user.correctAnswerIndex){
             return true
         }else {
             return false
@@ -35,7 +35,7 @@ let user = {
     },
 
     getCorrectAnswer(){
-        return correctAnswerIndex;
+        return usercorrectAnswerIndex;
      }
     
 };
