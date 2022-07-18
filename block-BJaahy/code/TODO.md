@@ -2,15 +2,118 @@
 
 - Create a class named `Square` which accepts one parameter `side` and will set two property `width` and `height` to the value of `side`.
 
+```js
+class Square{
+    constructor(side){
+        this.width = side;
+        this.height = side;
+    }
+}
+```
+
 - Add a method named `description` that will alert a message saying `The square is ${width} x ${height}`
+
+```js
+class Square{
+    constructor(side){
+        this.width = side;
+        this.height = side;
+    }
+    description(){
+        alert(`The square is ${this.width * this.height}`)
+    }
+}
+```
 
 - Create another method named `calcArea` that will return the area of the square.
 
+```js
+class Square{
+    constructor(side){
+        this.width = side;
+        this.height = side;
+    }
+    description(){
+        alert(`The square is ${this.width * this.height}`)
+    }
+    calcArea(){
+        return `${side * side}`
+    }
+}
+```
+
 - Create a getter method named `area` that will return area of the square.
+
+```js
+class Square{
+    constructor(side){
+        this.width = side;
+        this.height = side;
+    }
+    description(){
+        alert(`The square is ${this.width * this.height}`)
+    }
+    calcArea(){
+        return `${side * side}`
+    }
+    get area(){
+        return `${side * side}`
+    }
+}
+```
 
 - Create a setter method named `area` that will accept a value (the value will be the area of any square like 124). Based on the input value update the `width` and `height` of the square.(The width and the height will be updated to 12 (12 \* 12 = 124))
 
+```js
+class Square{
+    constructor(side){
+        this.width = side;
+        this.height = side;
+    }
+    description(){
+        alert(`The square is ${this.width * this.height}`)
+    }
+    calcArea(){
+        return `${side * side}`
+    }
+    get area(){
+        return `${side * side}`
+    }
+    set area(value){
+        this.width = 12;
+        this.height = 12
+    }
+}
+```
+
 - Create a static method named `isEqual` which accepts two square instance (when you create a new object using the class). If the area of both square is same the method should return `true` or `false`. (Static methods are called directly on the class not in the instance)
+
+```js
+class Square{
+    constructor(side){
+        this.width = side;
+        this.height = side;
+    }
+    description(){
+        alert(`The square is ${this.width * this.height}`)
+    }
+    calcArea(){
+        return `${side * side}`
+    }
+    get area(){
+        return `${side * side}`
+    }
+    set area(value){
+        this.width = 12;
+        this.height = 12
+    }
+    static isEqual(numA,numb){
+        if(numA === numB ){
+            return true
+        }
+    }
+}
+```
 
 - Create two instance of the `Square` class (ex: `let s1 = new Square(6);`)
 
@@ -37,3 +140,4 @@
 - Check the `fullName` using getter
 
 - Check the `nameContains` method
+
