@@ -27,6 +27,44 @@ Getter
 
 - `length`: returns the current length of the stack.
 
+```js
+class stack{
+    constructor(){
+        this.stack = [];
+    }
+    push(value){
+        this.stack.push(value);
+        return this.stack
+    }
+    pop(){
+        this.stack.remove(-1);
+        return this.stack;
+    }
+    peek(param = 0){
+        if(param = "empty"){
+            return this.stack[this.stack.length-1]
+        }
+        return this.stack[param]
+    }
+     displayStack(){
+        return this.stack.join(" ");
+    }
+    reverse(){
+        return this.stack.reverse();
+    }
+    
+    get length(){
+        return this.stack.length;
+    }
+    isEmpty(){
+        if(this.stack.length = 0){
+            return true;
+        }
+        return false;
+    }
+}
+```
+
 #### Test
 
 ```js
@@ -66,6 +104,38 @@ Getter
 
 #### Test
 
+class Queue{
+    constructor(){
+        this.queue = [];
+    }
+    enqueue(element){
+        this.queue.push(element);
+        return this.queue;
+    }
+    dequeue(element){
+        this.queue.shift(element);
+        return this.queue;
+    }
+    peek(parm = "empty"){
+        if(parm){
+            return this.queue[this.queue[0]];
+        }
+       return this.queue[parm];
+    }
+    displayQueue(){
+        return this.queue.join(" ");
+    }    
+    get length(){
+        return this.queue.length;
+    }
+    isEmpty(){
+        if(this.queue.length = 0){
+            return true;
+        }
+        return false;
+    }
+}
+
 ```js
 let atmQueue = new Queue();
 atmQueue.enqueue('Aman');
@@ -83,3 +153,5 @@ atmQueue.dequeue();
 atmQueue.dequeue();
 console.log(atmQueue.isEmpty()); // true
 ```
+
+
