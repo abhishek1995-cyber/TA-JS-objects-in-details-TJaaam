@@ -1,0 +1,93 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    padding: 6rem;
+  }
+  
+  section header {
+    font-size: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  section label {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  
+  section .inputbox {
+    width: 100%;
+    display: block;
+    padding: .8rem;
+    background-color: none;
+    border: 2px solid #777;
+    margin-bottom: 1rem;
+  }
+  
+  section button {
+    display: inline-block;
+    width: 100%;
+    padding: .8rem;
+    font-size: 1.5rem;
+    background-color: #008CBA;
+    margin-top: 2rem;
+    border: none;
+    color: #fff;
+  }
+  
+  section .content-container {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  section .content-container .bookList-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 0;
+    border-top: .1rem solid  #dddd;
+    font-size: 2rem;
+  }
+  
+  .bookData {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 1.7rem;
+    padding: .8rem;
+    background-color: #ddd;
+    position: relative;
+  }
+  
+  .bookData span {
+    position: absolute;
+    right: 0;
+  }
+  
+  .bookData .last-p {
+    margin-right: 2rem;
+  }
